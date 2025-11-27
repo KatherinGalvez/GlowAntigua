@@ -9,53 +9,69 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>GLOW ANTIGUA</h1>
-            <p>Explora nuestras marcas y encuentra lo que buscas</p>
-        </header>
-
-        <div class="search-container">
-            <!-- Dropdown de marcas -->
+        <!-- Contenedor 1: Lista de marcas | GLOW ANTIGUA | Carrito -->
+        <div class="navbar-container">
+            <!-- Contenedor 1 -->
             <div class="dropdown-container">
-                <button class="dropdown-button" onclick="toggleDropdown()">
-                    <span id="selectedBrand">Seleccionar marca</span> ▼
-                </button>
-                <div id="brandDropdown" class="dropdown-content">
-                    <div class="dropdown-item" onclick="openTab('nyx','NYX')">NYX</div>
-                     <div class="dropdown-item" onclick="openTab('maybelline','Maybelline')">Maybelline</div>
-                    <div class="dropdown-item" onclick="openTab('loreal','LOréal')">L'Oréal</div>
-                    <div class="dropdown-item" onclick="openTab('elf','e.l.f.')">e.l.f.</div>
-                    <!-- resto de marcas -->
-                    <div class="dropdown-item" onclick="openTab('centella','Centella')">CENTELLA skin 1004</div>
-                    <div class="dropdown-item" onclick="openTab('cerave','CeraVe')">CeraVe</div>
-                    <div class="dropdown-item" onclick="openTab('morphe','Morphe')">MORPHE</div>
-                    <div class="dropdown-item" onclick="openTab('revlon','Revlon')">Revlon</div>
-                    <div class="dropdown-item" onclick="openTab('medicube','Medicube')">medicube</div>
-                    <div class="dropdown-item" onclick="openTab('real','Real Techniqes')">Real Techniqes</div>
-                    <div class="dropdown-item" onclick="openTab('sephora','Sephora')">SEPHORA</div>
-                    <div class="dropdown-item" onclick="openTab('rare','Rare Beauty')">Rare Beauty</div>
-                    <div class="dropdown-item" onclick="openTab('huda','Huda')">HUDA</div>
-                    <div class="dropdown-item" onclick="openTab('fenty','Fenty')">Fenty</div>
-                    <div class="dropdown-item" onclick="openTab('patrick','Patrick')">PATRICK TA</div>
-                    <div class="dropdown-item" onclick="openTab('nars','Nars')">NARS</div>
-                    <div class="dropdown-item" onclick="openTab('rhode','rhode')">rhode</div>
-                    <div class="dropdown-item" onclick="openTab('jonson','Beuty of jonson')">Beauty of Joseon</div>
-                    <div class="dropdown-item" onclick="openTab('laneige','laneige')">LANEIGE</div>
-                    <div class="dropdown-item" onclick="openTab('olehenriksen','olehenriksen')">OLEHENRIKSEN</div>
-                    <div class="dropdown-item" onclick="openTab('gxve','gxve')">GXVE</div>
-                    <div class="dropdown-item" onclick="openTab('inkey','inkey')">The INKEY</div>
-                    <div class="dropdown-item" onclick="openTab('ordinary','ordinary')">The Ordinary</div>
-                    <div class="dropdown-item" onclick="openTab('charlotte','charlotte')">Charlotte</div>
-                    <div class="dropdown-item" onclick="openTab('one','one')">One Size</div>
-                    <div class="dropdown-item" onclick="openTab('SALE','SALE')">OFERTAS</div>
+                <!-- Dropdown de marcas -->
+                <div class="dropdown-container">
+                    <button class="dropdown-button" onclick="toggleDropdown()">
+                        <span id="selectedBrand">Seleccionar marca</span> ▼
+                    </button>
+                    <div id="brandDropdown" class="dropdown-content">
+                        <div class="dropdown-item" onclick="openTab('nyx','NYX')">NYX</div>
+                        <div class="dropdown-item" onclick="openTab('maybelline','Maybelline')">Maybelline</div>
+                        <div class="dropdown-item" onclick="openTab('loreal','LOréal')">L'Oréal</div>
+                        <div class="dropdown-item" onclick="openTab('elf','e.l.f.')">e.l.f.</div>
+                        <!-- resto de marcas -->
+                        <div class="dropdown-item" onclick="openTab('centella','Centella')">CENTELLA skin 1004</div>
+                        <div class="dropdown-item" onclick="openTab('cerave','CeraVe')">CeraVe</div>
+                        <div class="dropdown-item" onclick="openTab('morphe','Morphe')">MORPHE</div>
+                        <div class="dropdown-item" onclick="openTab('revlon','Revlon')">Revlon</div>
+                        <div class="dropdown-item" onclick="openTab('medicube','Medicube')">medicube</div>
+                        <div class="dropdown-item" onclick="openTab('real','Real Techniqes')">Real Techniqes</div>
+                        <div class="dropdown-item" onclick="openTab('sephora','Sephora')">SEPHORA</div>
+                        <div class="dropdown-item" onclick="openTab('rare','Rare Beauty')">Rare Beauty</div>
+                        <div class="dropdown-item" onclick="openTab('huda','Huda')">HUDA</div>
+                        <div class="dropdown-item" onclick="openTab('fenty','Fenty')">Fenty</div>
+                        <div class="dropdown-item" onclick="openTab('patrick','Patrick')">PATRICK TA</div>
+                        <div class="dropdown-item" onclick="openTab('nars','Nars')">NARS</div>
+                        <div class="dropdown-item" onclick="openTab('rhode','rhode')">rhode</div>
+                        <div class="dropdown-item" onclick="openTab('jonson','Beuty of jonson')">Beauty of Joseon</div>
+                        <div class="dropdown-item" onclick="openTab('laneige','laneige')">LANEIGE</div>
+                        <div class="dropdown-item" onclick="openTab('olehenriksen','olehenriksen')">OLEHENRIKSEN</div>
+                        <div class="dropdown-item" onclick="openTab('gxve','gxve')">GXVE</div>
+                        <div class="dropdown-item" onclick="openTab('inkey','inkey')">The INKEY</div>
+                        <div class="dropdown-item" onclick="openTab('ordinary','ordinary')">The Ordinary</div>
+                        <div class="dropdown-item" onclick="openTab('charlotte','charlotte')">Charlotte</div>
+                        <div class="dropdown-item" onclick="openTab('one','one')">One Size</div>
+                        <div class="dropdown-item" onclick="openTab('SALE','SALE')">OFERTAS</div>
+                    </div>
                 </div>
             </div>
 
+            <!-- GLOW ANTIGUA en el centro -->
+            <div class="header-center">
+                <h1>GLOW ANTIGUA</h1>
+                <p>Explora nuestras marcas y encuentra lo que buscas</p>
+            </div>
+            
+            <!-- Botón carrito a la derecha -->
+            <button class="cart-button" onclick="openCart()">
+                <!--<span>🛒</span>-->
+                <span>Ver todo</span>
+            </button>
+
+        </div>
+        
+
+        <!-- Contenedor 2 -->
+        <div class="search-container">
             <!-- Barra de búsqueda -->
-            <input type="text" id="searchInput" class="search-input" placeholder="Buscar por marca o nombre de producto...">
+            <input type="text" id="searchInput" class="search-input" placeholder="Buscar por marca o nombre de producto..."onfocus="clearSearch()">
             <!-- Botones -->
             <button class="search-button" onclick="searchProducts()">Buscar</button>
-            <button class="clear-button" onclick="clearSearch()">✖ Limpiar</button>
+            <!--<button class="clear-button" onclick="clearSearch()">✖ Limpiar</button>-->
         </div>
 
         <!--<div class="tabs">
@@ -370,7 +386,7 @@
                 </div>
                 <div class="product-card">
                     <div class="product-image"><img src="imagenesf/mayhi1.avif" alt="Producto"></div>
-                    <div class="product-name">Máscara de pestañas Lash Sensational</div>
+                    <div class="product-name">Rimel de pestañas Lash Sensational</div>
                     <div class="product-description">Descripción del producto</div>
                     <div class="product-description">Color: Very Black</div>
                     <div class="product-price">Q180</div>
@@ -378,7 +394,7 @@
                 </div>
                 <div class="product-card">
                     <div class="product-image"><img src="imagenesf/mayhi.avif" alt="Producto"></div>
-                    <div class="product-name">Máscara de pestañas Lash Sensational Sky High</div>
+                    <div class="product-name">Rimel de pestañas Lash Sensational Sky High</div>
                     <div class="product-description">Descripción del producto</div>
                     <div class="product-description">Color: Very Black</div>
                     <div class="product-price">Q180</div>
@@ -1355,130 +1371,164 @@
     </div>
 
     <script>
-        function openTab(evt, brandName) {
-            const tabContents = document.getElementsByClassName('tab-content');
-            for (let i = 0; i < tabContents.length; i++) {
-                tabContents[i].classList.remove('active');
+    // Cerrar dropdown al hacer clic fuera
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropdown-button') && !event.target.matches('.dropdown-button *')) {
+            const dropdown = document.getElementById('brandDropdown');
+            if (dropdown) {
+                dropdown.style.display = 'none';
             }
-
-            const tabButtons = document.getElementsByClassName('tab-button');
-            for (let i = 0; i < tabButtons.length; i++) {
-                tabButtons[i].classList.remove('active');
-            }
-
-            document.getElementById(brandName).classList.add('active');
-            evt.currentTarget.classList.add('active');
         }
+    }
 
-        function toggleDropdown() {
+    // Toggle del dropdown
+    function toggleDropdown() {
         const dropdown = document.getElementById("brandDropdown");
         dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
     }
 
+    // Función para abrir una pestaña desde el dropdown
     function openTab(tabId, brandName) {
+        // Actualizar el nombre de la marca seleccionada
         document.getElementById("selectedBrand").textContent = brandName;
+        
+        // Cerrar el dropdown
         document.getElementById("brandDropdown").style.display = "none";
+
+        // LIMPIAR LA BÚSQUEDA ANTERIOR
+        clearSearchResults();
 
         // Ocultar todas las pestañas
         const tabs = document.querySelectorAll(".tab-content");
         tabs.forEach(t => t.classList.remove("active"));
 
-        // Mostrar la seleccionada
+        // Mostrar la pestaña seleccionada
         document.getElementById(tabId).classList.add("active");
     }
 
-        // Función de búsqueda
-        function searchProducts() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            
-            if (searchTerm === '') {
-                alert('Por favor, ingresa un término de búsqueda');
-                return;
-            }
+    // Función auxiliar para limpiar resultados de búsqueda
+    function clearSearchResults() {
+        const allProducts = document.querySelectorAll('.product-card');
+        allProducts.forEach(product => {
+            product.style.display = 'block';
+            product.classList.remove('search-highlight');
+        });
+    }
 
-            const allProducts = document.querySelectorAll('.product-card');
-            const allTabs = document.querySelectorAll('.tab-content');
-            let foundCount = 0;
+    // Función de búsqueda
+    function searchProducts() {
+        const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+        
+        if (searchTerm === '') {
+            alert('Por favor, ingresa un término de búsqueda');
+            return;
+        }
 
-            allProducts.forEach(product => {
-                product.style.display = 'none';
-            });
+        const allProducts = document.querySelectorAll('.product-card');
+        const allTabs = document.querySelectorAll('.tab-content');
+        let foundCount = 0;
 
-            allTabs.forEach(tab => {
-                const brandName = tab.querySelector('.brand-title').textContent.toLowerCase();
-                const products = tab.querySelectorAll('.product-card');
-                let tabHasResults = false;
+        // Primero, ocultar todos los productos y tabs
+        allProducts.forEach(product => {
+            product.style.display = 'none';
+            product.classList.remove('search-highlight');
+        });
 
-                products.forEach(product => {
-                    const productName = product.querySelector('.product-name').textContent.toLowerCase();
-                    const productDesc = product.querySelector('.product-description').textContent.toLowerCase();
+        allTabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
 
-                    if (brandName.includes(searchTerm) || 
-                        productName.includes(searchTerm) || 
-                        productDesc.includes(searchTerm)) {
-                        product.style.display = 'block';
-                        product.classList.add('search-highlight');
-                        tabHasResults = true;
-                        foundCount++;
-                    }
+        // Buscar en cada tab
+        allTabs.forEach(tab => {
+            const brandName = tab.querySelector('.brand-title') ? 
+                tab.querySelector('.brand-title').textContent.toLowerCase() : '';
+            const products = tab.querySelectorAll('.product-card');
+            let tabHasResults = false;
+
+            products.forEach(product => {
+                const productName = product.querySelector('.product-name') ? 
+                    product.querySelector('.product-name').textContent.toLowerCase() : '';
+                const productDescs = product.querySelectorAll('.product-description');
+                let productDesc = '';
+                productDescs.forEach(desc => {
+                    productDesc += desc.textContent.toLowerCase() + ' ';
                 });
 
-                if (tabHasResults) {
-                    tab.classList.add('active');
-                    const tabId = tab.id;
-                    const tabButtons = document.querySelectorAll('.tab-button');
-                    tabButtons.forEach(button => {
-                        button.classList.remove('active');
-                        if (button.getAttribute('onclick').includes(tabId)) {
-                            button.classList.add('active');
-                        }
-                    });
-                } else {
-                    tab.classList.remove('active');
+                if (brandName.includes(searchTerm) || 
+                    productName.includes(searchTerm) || 
+                    productDesc.includes(searchTerm)) {
+                    product.style.display = 'block';
+                    product.classList.add('search-highlight');
+                    tabHasResults = true;
+                    foundCount++;
                 }
             });
 
-            if (foundCount === 0) {
-                alert('No se encontraron productos que coincidan con "' + searchTerm + '"');
-                clearSearch();
+            // Si hay resultados en este tab, mostrarlo
+            if (tabHasResults) {
+                tab.classList.add('active');
             }
+        });
+
+        if (foundCount === 0) {
+            alert('No se encontraron productos que coincidan con "' + searchTerm + '"');
+            clearSearch();
+        } else {
+            // Actualizar el nombre de marca mostrado (opcional)
+            // document.getElementById("selectedBrand").textContent = "Resultados de búsqueda";
         }
+    }
 
-        function clearSearch() {
-            document.getElementById('searchInput').value = '';
-            
-            const allProducts = document.querySelectorAll('.product-card');
-            allProducts.forEach(product => {
-                product.style.display = 'block';
-                product.classList.remove('search-highlight');
-            });
+    // Función para limpiar búsqueda y volver al estado inicial
+    function clearSearch() {
+        // Limpiar el campo de búsqueda
+        document.getElementById('searchInput').value = '';
+        
+        // Mostrar todos los productos
+        //const allProducts = document.querySelectorAll('.product-card');
+        //allProducts.forEach(product => {
+        //    product.style.display = 'block';
+        //    product.classList.remove('search-highlight');
+        //});
 
-            const allTabs = document.querySelectorAll('.tab-content');
-            allTabs.forEach((tab, index) => {
-                if (index === 0) {
-                    tab.classList.add('active');
-                } else {
-                    tab.classList.remove('active');
-                }
-            });
+        // Ocultar todos los tabs
+        //const allTabs = document.querySelectorAll('.tab-content');
+        //allTabs.forEach(tab => {
+        //    tab.classList.remove('active');
+        //});
 
-            const tabButtons = document.querySelectorAll('.tab-button');
-            tabButtons.forEach((button, index) => {
-                if (index === 0) {
-                    button.classList.add('active');
-                } else {
-                    button.classList.remove('active');
-                }
-            });
-        }
+        // Mostrar solo el primer tab (NYX por defecto)
+        //const firstTab = document.querySelector('.tab-content');
+        //if (firstTab) {
+        //    firstTab.classList.add('active');
+        //}
 
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        // Actualizar el nombre de la marca
+        //document.getElementById("selectedBrand").textContent = "NYX";
+    }
+
+    // Evento para buscar al presionar Enter
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) {
+            searchInput.addEventListener('keypress', function(e) {
                 if (e.key === 'Enter') {
                     searchProducts();
                 }
             });
+        }
+    });
+
+    // Función del carrito
+    function openCart() {
+        //alert('Carrito abierto - Aquí puedes implementar tu lógica del carrito');
+        // Mostrar todos los productos
+        const allProducts = document.querySelectorAll('.product-card');
+        allProducts.forEach(product => {
+            product.style.display = 'block';
+            product.classList.remove('search-highlight');
         });
-    </script>
+    }
+</script>
 </body>
 </html>
