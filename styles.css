@@ -60,38 +60,41 @@ header p {
     z-index: 1;
 }
 
-/* Estilos listas de marcas */
+/* Contenedor 1 */
 .navbar-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
     padding: 25px 30px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     gap: 20px;
     position: relative;
 }
 
+/* Estilos listas de marcas */
 .dropdown-container {
     position: relative;
     /*display: inline-block;
-    margin-bottom: 20px;*/
-    flex: 0 0 auto;
+    margin-bottom: 20px;
+    flex: 0 0 auto;*/
     z-index: 1001;
-    width: 150px;
+    justify-self: start;
+    width: 120px;
 }
     
 .dropdown-button {
-    padding: 12px 24px;
+    padding: 10px 16px;
     background: white;
     color: #667eea;
     border: 2px solid white;
     border-radius: 10px;
-    font-size: 1em;
+    font-size: 0.9em;/* Fuente más pequeña */
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
 }
         
@@ -178,41 +181,50 @@ header p {
     border-radius: 10px;
 }
 
-/* Header en el centro */
+/* Header en el centro - ESTILO LOGO */
 .header-center {
-    flex: 1;
     text-align: center;
     color: white;
-    width: 100%;
+    justify-self: center;
 }
 
 .header-center h1 {
-    font-size: 2.5em;
-    margin-bottom: 5px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+    font-size: 3em;
+    margin-bottom: 8px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', 'Arial Rounded MT Bold', 'Helvetica Rounded', sans-serif;
+    line-height: 0.9;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .header-center p {
-    font-size: 1em;
+    font-size: 0.85em;
     opacity: 0.95;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 5px;
 }
 
 /* Botón del carrito a la derecha */
 .cart-button {
-    flex: 0 0 auto;
-    padding: 12px 24px;
+    justify-self: end;
+    width: 120px; /* Botón más pequeño */
+    padding: 10px 16px; /* Padding reducido */
     background: white;
     color: #667eea;
     border: 2px solid white;
     border-radius: 10px;
-    font-size: 1em;
+    font-size: 0.9em; /* Fuente más pequeña */
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
-    gap: 8px;
+    justify-content: center;
+    gap: 6px;
 }
 
 .cart-button:hover {
@@ -222,7 +234,7 @@ header p {
 }
 
 .cart-button span:first-child {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 /* Barra de búsqueda */

@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GLOW ANTIGUA</title>
     <link rel="icon" href="imagenesf/logo.jpeg" type="image/png">
+    <!-- Fuente Montserrat para parecerse al logo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -53,7 +58,7 @@
             <!-- GLOW ANTIGUA en el centro -->
             <div class="header-center">
                 <h1>GLOW ANTIGUA</h1>
-                <p>Explora nuestras marcas y encuentra lo que buscas</p>
+                <p>Tus marcas favoritas más cerca de ti. ✨</p>
             </div>
             
             <!-- Botón carrito a la derecha -->
@@ -68,7 +73,7 @@
         <!-- Contenedor 2 -->
         <div class="search-container">
             <!-- Barra de búsqueda -->
-            <input type="text" id="searchInput" class="search-input" placeholder="Buscar por marca o nombre de producto..."onfocus="clearSearch()">
+            <input type="text" id="searchInput" class="search-input" placeholder="Buscar por marca o nombre de producto..." onfocus="clearSearch()">
             <!-- Botones -->
             <button class="search-button" onclick="searchProducts()">Buscar</button>
             <!--<button class="clear-button" onclick="clearSearch()">✖ Limpiar</button>-->
@@ -1471,8 +1476,12 @@
         });
 
         if (foundCount === 0) {
-            alert('No se encontraron productos que coincidan con "' + searchTerm + '"');
-            clearSearch();
+
+            // Ocultar todos los tabs
+            const allTabs = document.querySelectorAll('.tab-content');
+            allTabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
         } else {
             // Actualizar el nombre de marca mostrado (opcional)
             // document.getElementById("selectedBrand").textContent = "Resultados de búsqueda";
@@ -1521,12 +1530,23 @@
 
     // Función del carrito
     function openCart() {
-        //alert('Carrito abierto - Aquí puedes implementar tu lógica del carrito');
+        // Limpiar el campo de búsqueda
+        document.getElementById('searchInput').value = '';
+        
+        // Actualizar el nombre mostrado
+        document.getElementById("selectedBrand").textContent = "Todos los productos";
+        
         // Mostrar todos los productos
         const allProducts = document.querySelectorAll('.product-card');
         allProducts.forEach(product => {
             product.style.display = 'block';
             product.classList.remove('search-highlight');
+        });
+
+        // Mostrar TODOS los tabs al mismo tiempo
+        const allTabs = document.querySelectorAll('.tab-content');
+        allTabs.forEach(tab => {
+            tab.classList.add('active'); // Añadir active a todos
         });
     }
 </script>
